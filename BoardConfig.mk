@@ -38,8 +38,8 @@ TARGET_PREBUILT_KERNEL := device/alps/m72/prebuilt/kernel
 TARGET_RECOVERY_INITRC := device/alps/m72/recovery/init.mt6572.rc
 TARGET_RECOVERY_FSTAB := device/alps/m72/recovery/recovery.fstab
 
-DEVICE_SCREEN_WIDTH := 1200
-DEVICE_SCREEN_HEIGHT := 800
+DEVICE_SCREEN_WIDTH := 1024
+DEVICE_SCREEN_HEIGHT := 600
 
 
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -57,7 +57,7 @@ endif
 ifeq ($(RECOVERY_VARIANT),carliv)
 BOARD_HAS_MTK := true
 BOARD_NEEDS_MTK_GETSIZE := true
-DEVICE_RESOLUTION := 1200x800
+DEVICE_RESOLUTION := 1024x600
 endif
 
 
@@ -69,8 +69,8 @@ BOARD_MTK_BOOT_LABEL := "/bootimg"
 BOARD_USE_NTFS_3G := false
 BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun%d/file"
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 1200
+TARGET_SCREEN_HEIGHT := 600
+TARGET_SCREEN_WIDTH := 1024
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 endif
 
@@ -85,7 +85,7 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun%d/file"
 TW_EXCLUDE_SUPERSU := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BRGA_8888"
-DEVICE_RESOLUTION := 1200x800
+DEVICE_RESOLUTION := 1024x600
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
