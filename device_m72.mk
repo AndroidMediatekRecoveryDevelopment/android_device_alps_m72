@@ -7,7 +7,7 @@ $(call inherit-product-if-exists, vendor/alps/m72/m72-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/alps/m72/overlay
 
-LOCAL_PATH := device/alps/m72
+LOCAL_PATH := device/alps/m72/prebuilt
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
